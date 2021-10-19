@@ -12,5 +12,8 @@ export async function fetchEntries(content) {
   if (entries.items) return entries;
   // console.log(`Error getting Entries for ${contentType.name}.`);
 }
-
+// export async function fetchContent() {
+//   const contents = await contentful.getContentTypes();
+//   return contents;
+// }
 export default { fetchEntries };

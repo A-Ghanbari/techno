@@ -1,32 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Headerr from "./Header";
+import Footer from "./Footer";
+import { Layout } from "antd";
+const { Content } = Layout;
 
-export default function Layout({ children }) {
+export default function PageLayout({ children }) {
   return (
-    <div>
-      <header>
-        <ul>
-          <li>
-            <Link href="/">صفحه اصلی</Link>
-          </li>
-          <li>
-            <Link href="/crypto">ارز دیجیتال</Link>
-          </li>
-          <li>
-            <Link href="/mobile">موبایل</Link>
-          </li>
-          <li>
-            <Link href="/robot">رباتیک</Link>
-          </li>
-          <li>
-            <Link href="/space">فضانوردی</Link>
-          </li>
-        </ul>
-      </header>
-      <main>{children}</main>
-      <footer style={{ backgroundColor: "#000", color: "#fff", height: 200 }}>
-        footer
-      </footer>
-    </div>
+    <Layout className="layout">
+      <Headerr />
+      <Content style={{ padding: "0 50px" }}>
+        <div className="site-layout-content">{children}</div>
+      </Content>
+      <Footer />
+    </Layout>
   );
 }

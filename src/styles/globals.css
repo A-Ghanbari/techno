@@ -15,3 +15,11 @@ a {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Harmattan";
+  src: url("/fonts/Harmattan/Harmattan-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSansArabic";
+  src: url("/fonts/NotoSansArabic.ttf");
+}

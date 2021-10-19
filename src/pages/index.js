@@ -1,12 +1,10 @@
 import { fetchEntries } from "../helper/contentful";
-// import * as SDK from "contentful";
+
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 export default function Home({ items }) {
-  // useEffect(() => {
-  //   const posts = contentful.getEntries().then(console.log);
-  // });
   console.log(items);
+
   return (
     <div>
       {items.map((post) => {

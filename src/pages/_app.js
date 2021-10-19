@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import PageLayout from "../components/Layout";
 import "../styles/globals.css";
 import NextNprogress from "nextjs-progressbar";
 import { ConfigProvider } from "antd";
@@ -8,16 +8,16 @@ import faIR from "antd/lib/locale/fa_IR";
 function MyApp({ Component, pageProps }) {
   return (
     <ConfigProvider locale={faIR} direction="rtl">
-      <Layout>
-        <NextNprogress
-          color="yellow"
-          startPosition={0.6}
-          stopDelayMs={200}
-          height={3}
-          showOnShallow={true}
-        />
+      <NextNprogress
+        color="yellow"
+        startPosition={0.6}
+        stopDelayMs={200}
+        height={3}
+        showOnShallow={true}
+      />
+      <PageLayout>
         <Component {...pageProps} />
-      </Layout>
+      </PageLayout>
     </ConfigProvider>
   );
 }
