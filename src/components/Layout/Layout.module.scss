@@ -8,9 +8,9 @@
 // }
 
 .root {
-  --color-blue: #21c5e2;
+  --color-blue: rgb(33, 197, 226);
   --color-yellow: #eeff00;
-  --color-gray: #6b7074;
+  --color-gray: rgb(107, 112, 116);
   background-color: var(--color-gray) !important;
   font-family: Harmattan;
 
@@ -46,5 +46,6 @@
 .logo {
   float: right;
   width: 150px;
-  font-size: 20px;
+  font-size: 30px;
+  color: var(--color-blue);
 }

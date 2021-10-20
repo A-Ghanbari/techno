@@ -2,6 +2,7 @@ import PageLayout from "../components/Layout";
 import "../styles/globals.css";
 import NextNprogress from "nextjs-progressbar";
 import { ConfigProvider } from "antd";
+import "swiper/swiper-bundle.css";
 import "antd/dist/antd.css";
 import faIR from "antd/lib/locale/fa_IR";
 

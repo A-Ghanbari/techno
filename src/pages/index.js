@@ -1,35 +1,21 @@
-import { fetchEntries } from "../helper/contentful";
+import CatNews from "../components/Home/CatNews";
+import LastPosts from "../components/Home/LastPosts";
+import { fetchEntries, fetchEntry } from "../helper/contentful";
 
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
-
-export default function Home({ items }) {
-  console.log(items);
+export default function Home({ items, post }) {
+  console.log(post);
 
   return (
-    <div>
-      {items.map((post) => {
-        // if (post.fields.category.fields.category === "لپ تاپ") {
-        return (
-          <div key={post.sys.id}>
-            <h3 style={{ color: "red" }}>{post.fields.title}</h3>
-            <img src={post.fields.image.fields.file.url} />
-            <div
-              dangerouslySetInnerHTML={{
-                __html: documentToHtmlString(post.fields.content),
-              }}
-            />
-            <div>{post.fields.category.fields.category}</div>
-          </div>
-        );
-        // }
-      })}
-    </div>
-    // <div>h</div>
+    <>
+      <LastPosts items={items} />
+      <CatNews items={items} />
+    </>
   );
 }
 
 export async function getServerSideProps() {
   const { items } = await fetchEntries("techno");
+  const post = await fetchEntries("category");
 
-  return { props: { items } };
+  return { props: { items, post } };
 }

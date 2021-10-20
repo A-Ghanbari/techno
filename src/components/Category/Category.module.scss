@@ -1,0 +1,32 @@
+.bg {
+  background-image: url("/images/parallax.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1 {
+    padding: 60px 100px;
+    color: yellow;
+    font-size: 60px;
+  }
+}
+
+.card {
+  transition: all 0.5s;
+  margin: 40px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgb(156, 156, 156);
+  background-color: rgb(156, 156, 156);
+  h1 {
+    padding: 40px 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  img {
+    border-radius: 5px;
+  }
+  &:hover {
+    box-shadow: 0 0 5px 3px #0077ff;
+  }
+}

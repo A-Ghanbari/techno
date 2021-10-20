@@ -1,10 +1,18 @@
+@font-face {
+  font-family: "Harmattan";
+  src: url("/fonts/Harmattan/Harmattan-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSansArabic";
+  src: url("/fonts/NotoSansArabic.ttf");
+}
+
 html,
 body {
   direction: rtl;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "NotoSansArabic" !important;
 }
 
 a {
@@ -15,11 +23,7 @@ a {
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Harmattan";
-  src: url("/fonts/Harmattan/Harmattan-Regular.ttf");
-}
-@font-face {
-  font-family: "NotoSansArabic";
-  src: url("/fonts/NotoSansArabic.ttf");
+img {
+  width: 100%;
+  height: 100%;
 }
