@@ -1,4 +1,4 @@
-import Category from "../../components/category/Category";
+import Category from "../../components/Category/Category";
 import { fetchEntries } from "../../helper/contentful";
 import Head from "next/head";
 export default function Laptop({ items }) {

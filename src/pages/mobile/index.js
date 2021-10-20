@@ -1,5 +1,5 @@
 import React from "react";
-import Category from "../../components/category/Category";
+import Category from "../../components/Category/Category";
 import Head from "next/head";
 import { fetchEntries } from "../../helper/contentful";
 

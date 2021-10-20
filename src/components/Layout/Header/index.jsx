@@ -25,7 +25,7 @@ export default function Headerr() {
           <Link href="/game">بازی </Link>
         </Menu.Item>
         <Menu.Item key="5">
-          <Link href="/AI">هوش مصنوعی</Link>
+          <Link href="/ai">هوش مصنوعی</Link>
         </Menu.Item>
         <Menu.Item key="6">
           <Link href="/application">نرم افزار</Link>
