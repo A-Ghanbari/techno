@@ -15,7 +15,6 @@ export default function Home({ items, post }) {
 
 export async function getServerSideProps() {
   const { items } = await fetchEntries("techno");
-  const post = await fetchEntries("category");
 
-  return { props: { items, post } };
+  return { props: { items } };
 }

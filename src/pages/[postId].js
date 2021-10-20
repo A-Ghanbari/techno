@@ -1,17 +1,13 @@
 import React from "react";
 import { fetchEntry } from "../helper/contentful";
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+
+import SinglePage from "../components/SinglePage/SinglePage";
 
 export default function PostId({ fields }) {
   return (
-    <div>
-      {fields.title}
-      <div
-        dangerouslySetInnerHTML={{
-          __html: documentToHtmlString(fields.content),
-        }}
-      />
-    </div>
+    <>
+      <SinglePage fields={fields} />
+    </>
   );
 }
 

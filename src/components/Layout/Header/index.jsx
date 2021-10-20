@@ -2,12 +2,14 @@ import React from "react";
 import { Layout, Menu } from "antd";
 import classes from "../Layout.module.scss";
 import Link from "next/link";
+
 const { Header } = Layout;
 
 export default function Headerr() {
   return (
     <Header className={classes.root}>
-      <div className={classes.logo}>DigiMigi</div>
+      <div className={classes.logo} />
+
       <Menu theme="dark" className={classes.menu} mode="horizontal">
         <Menu.Item key="1">
           <Link href="/">خانه</Link>
