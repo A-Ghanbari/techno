@@ -1,9 +1,12 @@
 import Category from "../../components/category/Category";
 import { fetchEntries } from "../../helper/contentful";
-
+import Head from "next/head";
 export default function Game({ items }) {
   return (
     <div>
+      <Head>
+        <title>بازی</title>
+      </Head>
       <Category items={items} cat="بازی" />
     </div>
   );

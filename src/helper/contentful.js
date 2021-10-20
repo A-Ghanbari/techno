@@ -16,4 +16,4 @@ export async function fetchEntry(id) {
   if (post.fields) return post;
 }
 
-export default { fetchEntries, fetchEntry };
+// export default { fetchEntries, fetchEntry };
