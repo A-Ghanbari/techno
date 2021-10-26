@@ -3,7 +3,8 @@ import LastPosts from "../components/Home/LastPosts";
 import { fetchEntries, fetchEntry } from "../helper/contentful";
 import Head from "next/head";
 
-export default function Home({ items }) {
+export default function Home({ items, post }) {
+  console.log(items);
   return (
     <>
       <Head>
@@ -18,6 +19,6 @@ export default function Home({ items }) {
 
 export async function getServerSideProps() {
   const { items } = await fetchEntries("techno");
-
-  return { props: { items } };
+  const post = await fetchEntries("category");
+  return { props: { items, post } };
 }

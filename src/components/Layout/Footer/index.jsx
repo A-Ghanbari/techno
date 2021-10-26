@@ -9,7 +9,7 @@ export default function Footer() {
       <Row justify="space-around">
         <Col xs={24} md={7}>
           <ul>
-            <Link href="/aI">
+            <Link href="/ai">
               <a>
                 <li>هوش مصنوعی</li>
               </a>
