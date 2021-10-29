@@ -51,7 +51,7 @@ export default function Headerr() {
           </Link>
         </Menu.Item>
         <Menu.Item key="5">
-          <Link href="/ai">
+          <Link href="/robot">
             <a>
               <FaRobot className={classes.icon} />
               هوش مصنوعی
