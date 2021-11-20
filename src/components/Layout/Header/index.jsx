@@ -66,9 +66,9 @@ export default function Headerr() {
             </a>
           </Link>
         </Menu.Item>
-        <Menu.Item key="7" className={classes.about}>
+        {/* <Menu.Item key="7" className={classes.about}>
           <Link href="/about">درباره ما</Link>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu>
     </Header>
   );

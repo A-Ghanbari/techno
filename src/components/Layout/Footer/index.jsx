@@ -38,11 +38,11 @@ export default function Footer() {
                 <li>لپ تاپ</li>
               </a>
             </Link>
-            <Link href="/about">
+            {/* <Link href="/about">
               <a>
                 <li> درباره ما</li>
               </a>
-            </Link>
+            </Link> */}
           </ul>
         </Col>
         <Col xs={24} md={7}>
@@ -51,10 +51,7 @@ export default function Footer() {
       </Row>
       <Row>
         <Col span={24}>
-          <p>
-            © هر گونه کپی‌برداری جزئی یا کلی از مطالب دیجی میجی مشکلی ندارد .
-            حقوق این سایت به علی و حامد تعلق دارد.
-          </p>
+          <p>© هر گونه کپی‌برداری از مطالب دیجی میجی مشکلی ندارد .</p>
         </Col>
       </Row>
     </div>
